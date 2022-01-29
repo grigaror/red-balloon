@@ -1,6 +1,6 @@
 import controlP5.*;
 float[] thingsX, thingsY;
-int timer, level=1, skills, tmr;
+int timer, level=1, tmr;
 PImage balloon=requestImage("balloon.png");
 PImage sky=requestImage("sky.png");
 boolean menu=true, press;
@@ -54,7 +54,6 @@ void reset() {
     thingsY[i]=random(-5000-level*500, -1000);
     timer=0;
   }
-  skills=3;
 }
 void menu() {
   image(sky, 0, -height/4.5, width, height+height/4.5);
