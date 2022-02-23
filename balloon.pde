@@ -1,7 +1,6 @@
 import controlP5.*;
 float[] thingsX, thingsY;
 int timer, level=1, tmr;
-PImage balloon=requestImage("balloon.png");
 PImage sky=requestImage("sky.png");
 boolean menu=true, press;
 PFont font;
@@ -57,8 +56,6 @@ void reset() {
 }
 void menu() {
   image(sky, 0, -height/4.5, width, height+height/4.5);
-  fill(255, 224, 64);
-  text("С днём рождения, мой дорогой дядя!", 10, 10, 500, 1000);
   reset();
 }
 float dist(float x, float y) {
